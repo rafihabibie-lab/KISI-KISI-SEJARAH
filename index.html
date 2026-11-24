@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahan Ajar SAS Sejarah Kelas XI — Kolonialisme & Imperialisme</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#8b2e1f;
+    --primary-dark:#5c1e14;
+    --primary-light:#b8452e;
+    --accent:#d4a24c;
+    --accent-light:#f0c674;
+    --bg:#fdf8f0;
+    --surface:#ffffff;
+    --surface-alt:#f5ecdc;
+    --text:#2d2418;
+    --muted:#6b5e4a;
+    --border:#e8dcc4;
+    --success:#2d7d46;
+    --success-bg:#e8f5ec;
+    --danger:#b91c1c;
+    --danger-bg:#fdeaea;
+    --shadow:0 4px 20px rgba(92,30,20,.08);
+    --shadow-lg:0 10px 40px rgba(92,30,20,.15);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.25;color:var(--primary-dark)}
+
+  /* ===== NAVBAR ===== */
+  nav{
+    position:sticky;top:0;z-index:100;
+    background:rgba(253,248,240,.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav-inner{
+    max-width:1200px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .brand{
+    font-family:'Playfair Display',serif;font-weight:800;font-size:1.15rem;
+    color:var(--primary-dark);display:flex;align-items:center;gap:10px;
+  }
+  .brand-badge{
+    width:34px;height:34px;border-radius:10px;
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    color:#fff;display:grid;place-items:center;font-size:.95rem;
+    font-family:'Playfair Display',serif;
+  }
+  .nav-links{display:flex;gap:6px;flex-wrap:wrap}
+  .nav-links a{
+    color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:600;
+    padding:8px 14px;border-radius:10px;transition:.2s;
+  }
+  .nav-links a:hover{background:var(--surface-alt);color:var(--primary)}
+
+  /* ===== HERO ===== */
+  .hero{
+    max-width:1200px;margin:0 auto;padding:70px 24px 50px;
+    position:relative;text-align:center;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:20px 0;
+    background:
+      radial-gradient(circle at 15% 30%,rgba(212,162,76,.18),transparent 45%),
+      radial-gradient(circle at 85% 60%,rgba(139,46,31,.12),transparent 50%);
+    z-index:-1;border-radius:40px;
+  }
+  .hero-tag{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--primary);background:var(--surface);
+    border:1px solid var(--border);padding:8px 18px;border-radius:999px;
+    margin-bottom:20px;box-shadow:var(--shadow);
+  }
+  .hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;margin-bottom:16px}
+  .hero h1 em{color:var(--primary);font-style:italic}
+  .hero p{color:var(--muted);max-width:680px;margin:0 auto 30px;font-size:1.05rem}
+  .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 28px;border-radius:12px;font-weight:700;font-size:.95rem;
+    text-decoration:none;cursor:pointer;border:none;transition:.25s;
+    font-family:inherit;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    color:#fff;box-shadow:0 6px 20px rgba(139,46,31,.3);
+  }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(139,46,31,.4)}
+  .btn-ghost{
+    background:var(--surface);color:var(--primary-dark);border:1.5px solid var(--border);
+  }
+  .btn-ghost:hover{background:var(--surface-alt)}
+
+  /* ===== SECTIONS ===== */
+  section{max-width:1200px;margin:0 auto;padding:60px 24px}
+  .section-head{text-align:center;margin-bottom:40px}
+  .section-head .kicker{
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:10px;display:block;
+  }
+  .section-head h2{font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:10px}
+  .section-head p{color:var(--muted);max-width:640px;margin:0 auto}
+
+  /* ===== NOTICE ===== */
+  .notice{
+    background:linear-gradient(135deg,#fff8e6,#fdf0d5);
+    border-left:4px solid var(--accent);border-radius:12px;
+    padding:16px 22px;margin-bottom:30px;font-size:.92rem;color:var(--muted);
+  }
+  .notice strong{color:var(--primary-dark)}
+
+  /* ===== MATERI ===== */
+  .materi-list{display:flex;flex-direction:column;gap:16px}
+  .materi-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden;transition:.25s;
+  }
+  .materi-card:hover{box-shadow:var(--shadow-lg)}
+  .materi-header{
+    display:flex;align-items:center;gap:18px;padding:22px 26px;cursor:pointer;
+    user-select:none;transition:.2s;
+  }
+  .materi-header:hover{background:var(--surface-alt)}
+  .materi-num{
+    font-family:'Playfair Display',serif;font-weight:800;font-size:1.6rem;
+    color:var(--accent);min-width:52px;text-align:center;
+  }
+  .materi-title{flex:1}
+  .materi-title h3{font-size:1.15rem;margin-bottom:3px}
+  .materi-title p{font-size:.85rem;color:var(--muted)}
+  .materi-arrow{font-size:1.1rem;color:var(--primary);transition:.3s}
+  .materi-card.open .materi-arrow{transform:rotate(180deg)}
+  .materi-body{
+    max-height:0;overflow:hidden;transition:max-height .45s ease;
+    border-top:1px solid transparent;
+  }
+  .materi-card.open .materi-body{border-top-color:var(--border)}
+  .materi-inner{padding:26px}
+  .materi-section{margin-bottom:22px}
+  .materi-section:last-child{margin-bottom:0}
+  .materi-section h4{
+    font-family:'Inter',sans-serif;font-size:.85rem;font-weight:800;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--primary);
+    margin-bottom:10px;display:flex;align-items:center;gap:8px;
+  }
+  .materi-section p, .materi-section li{font-size:.94rem;color:var(--text);margin-bottom:8px}
+  .materi-section ul{padding-left:22px}
+  .materi-section li::marker{color:var(--accent)}
+  .materi-section strong{color:var(--primary-dark)}
+  .indicator{
+    background:var(--surface-alt);border-radius:12px;padding:16px 20px;
+    border-left:3px solid var(--accent);
+  }
+  .indicator h4{color:var(--primary-dark)}
+  .correction{
+    background:#fff4ec;border-left:3px solid var(--primary-light);
+    border-radius:12px;padding:16px 20px;
+  }
+  .correction h4{color:var(--primary-light)}
+
+  /* ===== FLASHCARD ===== */
+  .fc-wrap{max-width:720px;margin:0 auto}
+  .fc-toolbar{
+    display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;
+    flex-wrap:wrap;gap:10px;
+  }
+  .fc-counter{font-weight:700;color:var(--muted);font-size:.9rem}
+  .fc-btns{display:flex;gap:8px}
+  .fc-btn{
+    background:var(--surface);border:1.5px solid var(--border);color:var(--primary-dark);
+    padding:9px 16px;border-radius:10px;font-weight:600;font-size:.85rem;cursor:pointer;
+    transition:.2s;font-family:inherit;
+  }
+  .fc-btn:hover{background:var(--surface-alt);border-color:var(--accent)}
+  .flashcard{
+    perspective:1500px;height:360px;cursor:pointer;margin-bottom:20px;
+  }
+  .flashcard-inner{
+    position:relative;width:100%;height:100%;transition:transform .6s cubic-bezier(.4,.2,.2,1);
+    transform-style:preserve-3d;
+  }
+  .flashcard.flipped .flashcard-inner{transform:rotateY(180deg)}
+  .fc-face{
+    position:absolute;inset:0;backface-visibility:hidden;border-radius:22px;
+    padding:36px;display:flex;flex-direction:column;justify-content:center;
+    box-shadow:var(--shadow-lg);border:1px solid var(--border);
+  }
+  .fc-front{
+    background:linear-gradient(135deg,#fff,#fdf5e6);
+    text-align:center;
+  }
+  .fc-back{
+    background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+    color:#fff;transform:rotateY(180deg);
+  }
+  .fc-label{
+    font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:18px;
+  }
+  .fc-back .fc-label{color:var(--accent-light)}
+  .fc-text{font-size:1.15rem;font-weight:600;line-height:1.5}
+  .fc-back .fc-text{color:#fff;font-weight:500;font-size:1.05rem}
+  .fc-hint{
+    position:absolute;bottom:22px;left:0;right:0;text-align:center;
+    font-size:.78rem;color:var(--muted);font-style:italic;
+  }
+  .fc-back .fc-hint{color:rgba(255,255,255,.7)}
+  .fc-progress{
+    height:6px;background:var(--surface-alt);border-radius:99px;overflow:hidden;
+  }
+  .fc-progress-fill{
+    height:100%;background:linear-gradient(90deg,var(--accent),var(--primary-light));
+    border-radius:99px;transition:width .3s;
+  }
+
+  /* ===== QUIZ ===== */
+  .quiz-wrap{max-width:800px;margin:0 auto}
+  .quiz-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    box-shadow:var(--shadow-lg);padding:34px;
+  }
+  .quiz-top{
+    display:flex;align-items:center;gap:16px;margin-bottom:22px;
+  }
+  .quiz-progress{flex:1;height:8px;background:var(--surface-alt);border-radius:99px;overflow:hidden}
+  .quiz-progress-fill{
+    height:100%;background:linear-gradient(90deg,var(--primary),var(--primary-light));
+    border-radius:99px;transition:width .35s;
+  }
+  .quiz-counter{font-weight:800;font-size:.85rem;color:var(--primary);white-space:nowrap}
+  .quiz-score-mini{font-size:.8rem;color:var(--muted);font-weight:600}
+  .q-number{
+    font-size:.78rem;font-weight:800;letter-spacing:.1em;color:var(--accent);
+    text-transform:uppercase;margin-bottom:8px;
+  }
+  .q-text{font-size:1.1rem;font-weight:600;color:var(--text);margin-bottom:22px;line-height:1.55}
+  .options{display:flex;flex-direction:column;gap:11px;margin-bottom:18px}
+  .option{
+    display:flex;align-items:flex-start;gap:14px;padding:14px 18px;
+    border:1.5px solid var(--border);border-radius:12px;cursor:pointer;
+    background:var(--surface);transition:.18s;font-size:.95rem;
+    text-align:left;font-family:inherit;color:var(--text);
+  }
+  .option:hover:not(.disabled){border-color:var(--accent);background:#fffdf7}
+  .option-letter{
+    width:28px;height:28px;flex-shrink:0;border-radius:8px;
+    display:grid;place-items:center;font-weight:800;font-size:.85rem;
+    background:var(--surface-alt);color:var(--primary-dark);
+  }
+  .option.correct{border-color:var(--success);background:var(--success-bg)}
+  .option.correct .option-letter{background:var(--success);color:#fff}
+  .option.wrong{border-color:var(--danger);background:var(--danger-bg)}
+  .option.wrong .option-letter{background:var(--danger);color:#fff}
+  .option.disabled{cursor:default}
+  .feedback{
+    border-radius:12px;padding:18px 20px;margin-bottom:18px;font-size:.92rem;
+    display:none;animation:fadeUp .3s ease;
+  }
+  .feedback.show{display:block}
+  .feedback.correct{background:var(--success-bg);border-left:4px solid var(--success)}
+  .feedback.wrong{background:var(--danger-bg);border-left:4px solid var(--danger)}
+  .feedback h5{font-family:'Inter',sans-serif;font-size:.82rem;font-weight:800;
+    text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+  .feedback.correct h5{color:var(--success)}
+  .feedback.wrong h5{color:var(--danger)}
+  .feedback p{color:var(--text)}
+  .quiz-actions{display:flex;justify-content:flex-end;gap:10px}
+  .btn-next{
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    color:#fff;padding:12px 26px;border-radius:10px;border:none;
+    font-weight:700;cursor:pointer;font-family:inherit;font-size:.92rem;
+    display:none;transition:.2s;
+  }
+  .btn-next.show{display:inline-flex;align-items:center;gap:8px}
+  .btn-next:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(139,46,31,.35)}
+
+  /* Result */
+  .result{text-align:center;padding:20px 10px;display:none}
+  .result.show{display:block;animation:fadeUp .4s ease}
+  .result-emoji{font-size:4rem;margin-bottom:12px}
+  .result h3{font-size:1.8rem;margin-bottom:8px}
+  .result-score{
+    font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:800;
+    color:var(--primary);margin:14px 0;
+  }
+  .result-score small{font-size:1.2rem;color:var(--muted)}
+  .result-msg{color:var(--muted);margin-bottom:26px;max-width:420px;margin-left:auto;margin-right:auto}
+  .result .btn-ghost{margin-top:8px}
+
+  @keyframes fadeUp{
+    from{opacity:0;transform:translateY(10px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    border-top:1px solid var(--border);padding:40px 24px;text-align:center;
+    color:var(--muted);font-size:.85rem;background:var(--surface);
+  }
+  footer strong{color:var(--primary-dark)}
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:720px){
+    .nav-links{gap:2px}
+    .nav-links a{padding:6px 10px;font-size:.8rem}
+    .brand span.brand-text{display:none}
+    section{padding:44px 18px}
+    .materi-header{padding:18px;gap:12px}
+    .materi-num{font-size:1.3rem;min-width:38px}
+    .materi-title h3{font-size:1rem}
+    .materi-title p{font-size:.78rem}
+    .materi-inner{padding:18px}
+    .flashcard{height:320px}
+    .fc-face{padding:24px}
+    .fc-text{font-size:1rem}
+    .quiz-card{padding:22px}
+    .q-text{font-size:1rem}
+    .option{font-size:.88rem;padding:12px 14px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="brand-badge">S</div>
+      <span class="brand-text">Sejarah XI · SAS</span>
+    </div>
+    <div class="nav-links">
+      <a href="#materi">Materi</a>
+      <a href="#flashcard">Flashcard</a>
+      <a href="#kuis">Kuis</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <span class="hero-tag">Bahan Ajar Persiapan SAS</span>
+  <h1>Kolonialisme &amp; <em>Imperialisme</em> di Nusantara</h1>
+  <p>Ringkasan materi, pendalaman indikator soal, flashcard hafalan, dan 40 kuis interaktif berpembahasan untuk Kelas XI SMA.</p>
+  <div class="hero-btns">
+    <a href="#materi" class="btn btn-primary">📚 Mulai Belajar</a>
+    <a href="#kuis" class="btn btn-ghost">✍️ Latihan Kuis</a>
+  </div>
+</header>
+
+<!-- ===== MATERI ===== -->
+<section id="materi">
+  <div class="section-head">
+    <span class="kicker">Bagian 01</span>
+    <h2>Materi Pokok</h2>
+    <p>Dua belas materi pokok lengkap dengan inti rangkuman, pendalaman, dan keterangan indikator soal.</p>
+  </div>
+
+  <div class="notice">
+    <strong>Catatan Fakta:</strong> Beberapa data telah dikoreksi dari rangkuman awal. Jalan Raya Pos ±1.000 km (bukan 11.000 km); EIC berdiri 1600 (bukan 1579 — 1579 adalah pelayaran Francis Drake); Spanyol tiba di Tidore 1521. Materi Politik Etis tidak ada di rangkuman, ditambahkan dari sumber standar.
+  </div>
+
+  <div class="materi-list" id="materiList">
+
+    <!-- 1 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">01</div>
+        <div class="materi-title">
+          <h3>Konsep Kolonialisme dan Imperialisme</h3>
+          <p>Membedakan dan menghubungkan konsep dalam situasi sejarah</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p><strong>Kolonialisme</strong> adalah praktik penguasaan suatu wilayah oleh bangsa lain untuk memperoleh keuntungan, terutama melalui penguasaan sumber daya alam, tenaga kerja, dan perdagangan.</p>
+          <ul>
+            <li><strong>Tujuan:</strong> menguasai sumber daya dan memperoleh keuntungan ekonomi.</li>
+            <li><strong>Cara:</strong> pendudukan wilayah, pembentukan kekuasaan kolonial, eksploitasi sumber daya.</li>
+            <li><strong>Contoh:</strong> Belanda menguasai Nusantara untuk mengendalikan perdagangan rempah dan memanfaatkan sumber daya alam.</li>
+          </ul>
+          <p><strong>Imperialisme</strong> adalah kebijakan atau tindakan suatu negara untuk memperluas kekuasaan dan pengaruhnya atas bangsa atau wilayah lain, baik melalui politik, ekonomi, militer, maupun budaya.</p>
+          <ul>
+            <li><strong>Tujuan:</strong> memperluas kekuasaan, pengaruh, dan kepentingan negara.</li>
+            <li><strong>Cara:</strong> ekspansi militer, tekanan politik, penguasaan ekonomi, atau pembentukan koloni.</li>
+            <li><strong>Contoh:</strong> bangsa Eropa memperluas pengaruh ke Asia untuk menguasai jalur perdagangan dan wilayah strategis.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Imperialisme tidak selalu berbentuk pendudukan langsung. Ada <strong>imperialisme informal</strong>: penguasaan ekonomi, tekanan politik, aliansi tidak setara, atau pengaruh budaya. Kolonialisme lebih menekankan <strong>penguasaan wilayah dan pemerintahan kolonial</strong>, sedangkan imperialisme menekankan <strong>dominasi dan perluasan pengaruh</strong>. Dalam sejarah modern, keduanya sering berjalan bersama.</p>
+          <p>Hubungan hierarkis: <strong>kolonialisme adalah bagian dari imperialisme</strong>; imperialisme adalah konsep yang lebih luas.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menyajikan situasi, lalu meminta siswa menentukan apakah termasuk kolonialisme, imperialisme, atau keduanya. Kunci pembeda: ada <em>pendudukan dan pemerintahan kolonial</em> → kolonialisme; ada <em>perluasan pengaruh</em> tanpa selalu menduduki → imperialisme. Kesalahan umum: menganggap keduanya sama persis.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 2 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">02</div>
+        <div class="materi-title">
+          <h3>Latar Belakang Kedatangan Bangsa Eropa</h3>
+          <p>Menganalisis faktor pendorong beserta hubungan sebab-akibat</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <ul>
+            <li><strong>Jatuhnya Konstantinopel 1453</strong> ke tangan Turki Usmani menyebabkan jalur perdagangan rempah dari Asia ke Eropa terputus dan harga rempah melambung.</li>
+            <li>Bangsa Eropa membutuhkan rempah-rempah seperti cengkeh, lada, dan pala untuk mengawetkan makanan, bumbu masak, serta obat-obatan di musim dingin.</li>
+            <li><strong>Motivasi 3G:</strong>
+              <ul>
+                <li><strong>Gold:</strong> mencari kekayaan dengan menguasai sumber rempah.</li>
+                <li><strong>Glory:</strong> mencari kejayaan, kekuasaan, dan wilayah jajahan.</li>
+                <li><strong>Gospel:</strong> menyebarkan agama Nasrani.</li>
+              </ul>
+            </li>
+            <li><strong>Revolusi Industri</strong> membuat Eropa memerlukan lebih banyak bahan baku dan daerah pemasaran baru.</li>
+            <li><strong>Persaingan antarnegara Eropa:</strong> Portugis dan Spanyol menjadi pelopor ekspansi maritim; Belanda dan Inggris bersaing memperebutkan jalur dagang dan sumber rempah.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Jatuhnya Konstantinopel bukan satu-satunya sebab, tetapi menjadi <strong>pemicu penting</strong> karena memutus akses perdagangan lama. Faktor pendukung lain: perkembangan teknologi pelayaran dan navigasi (kompas, peta, kapal), semangat penjelajahan, serta dukungan kerajaan.</p>
+          <p>Perlu dibedakan: <strong>sebab langsung/pemicu</strong> (jatuhnya Konstantinopel), <strong>motivasi</strong> (3G, kebutuhan rempah, keuntungan ekonomi), dan <strong>kondisi pendukung</strong> (Revolusi Industri, teknologi pelayaran, persaingan antarnegara Eropa).</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan sebab langsung, isi 3G, pengaruh Revolusi Industri, atau hubungan jatuhnya Konstantinopel dengan penjelajahan. Keterampilan yang diuji: menyusun rantai sebab-akibat. Kesalahan umum: menyebut 3G sebagai satu-satunya sebab.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 3 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">03</div>
+        <div class="materi-title">
+          <h3>Kedatangan Portugis dan Spanyol</h3>
+          <p>Menjelaskan proses awal penguasaan dan urutan kronologis</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <ul>
+            <li><strong>Portugis:</strong> dipimpin Alfonso d'Albuquerque, menguasai Malaka <strong>1511</strong>, masuk Maluku <strong>1512</strong>.</li>
+            <li><strong>Spanyol:</strong> tiba di Tidore, Maluku <strong>1521</strong>; memicu persaingan dengan Portugis; diselesaikan melalui <strong>Perjanjian Saragosa</strong>.</li>
+            <li><strong>Inggris:</strong> Francis Drake tiba di Ternate <strong>1579</strong>; EIC didirikan <strong>1600</strong>; ekspedisi EIC ke Banten <strong>1602</strong>. Inggris sempat menduduki Nusantara era Raffles <strong>1811–1816</strong>.</li>
+            <li><strong>Belanda:</strong> mendarat di Banten <strong>1596</strong> di bawah Cornelis de Houtman; membentuk VOC <strong>1602</strong>.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Persaingan Portugis–Spanyol di Maluku berkaitan dengan perebutan pengaruh atas perdagangan rempah, terutama cengkih dan pala. <strong>Perjanjian Saragosa</strong> menjadi upaya membagi wilayah pengaruh antara keduanya.</p>
+          <p>Ada dua cara mengurutkan yang harus dibedakan agar tidak kontradiktif:</p>
+          <ul>
+            <li><strong>Berdasarkan kedatangan pertama:</strong> Portugis (1511/1512) → Spanyol (1521) → Inggris/Drake (1579) → Belanda (1596).</li>
+            <li><strong>Berdasarkan kongsi dagang resmi:</strong> Portugis → Spanyol → Belanda (VOC 1602) → Inggris (EIC 1600/1602).</li>
+          </ul>
+        </div>
+        <div class="materi-section correction">
+          <h4>⚠️ Catatan Koreksi</h4>
+          <p>Rangkuman menyebut "Inggris melalui EIC sekitar 1579". Yang benar: <strong>1579 adalah pelayaran Francis Drake</strong>, bukan EIC. <strong>EIC berdiri 1600</strong>. Rangkuman menyebut Spanyol 1522; sumber akademik umum menyebut <strong>1521</strong>.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan tokoh Portugis di Malaka, tahun penguasaan, kedatangan Spanyol di Tidore, fungsi Perjanjian Saragosa, atau urutan kedatangan. Keterampilan: menghubungkan tokoh, tempat, tahun, dan perjanjian. Kesalahan umum: menukar Portugis–Spanyol atau salah mengurutkan Inggris–Belanda.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 4 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">04</div>
+        <div class="materi-title">
+          <h3>VOC: Hak Istimewa dan Strategi Penguasaan</h3>
+          <p>Menganalisis hak, strategi, dan sarana VOC</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p>VOC berhasil mengendalikan pasar rempah di Maluku karena memiliki <strong>Hak Octrooi</strong> dari pemerintah Belanda.</p>
+          <p><strong>Strategi politik dan militer VOC:</strong></p>
+          <ul>
+            <li><strong>Ekspedisi militer dan benteng strategis:</strong> menaklukkan wilayah pembudidaya rempah yang membangkang, seperti Kepulauan Banda 1621; mendirikan pos dagang dan benteng di jalur maritim krusial untuk mengawasi kapal pesaing.</li>
+            <li><strong>Devide et Impera / adu domba:</strong> memecah belah kerajaan lokal dengan mengintervensi konflik internal atau menghasut perselisihan antarkerajaan; berpihak pada kubu lemah dengan imbalan hak monopoli atau wilayah.</li>
+            <li><strong>Contoh:</strong> konflik Sultan Hasanuddin dengan Arung Palakka dalam perlawanan Makassar.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p><strong>Hak Octrooi</strong> adalah dasar hukum istimewa VOC. Secara umum mencakup hak monopoli perdagangan, membentuk angkatan bersenjata, membangun benteng, menyatakan perang, mengadakan perjanjian, mengangkat pegawai, dan mengelola wilayah dagang. VOC adalah kongsi dagang, tetapi memiliki hak seperti negara.</p>
+          <p>Perlu dibedakan: <strong>hak istimewa</strong> (Octrooi), <strong>strategi</strong> (adu domba, ekspedisi militer), dan <strong>sarana</strong> (benteng, kapal, tentara, pos dagang).</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menyajikan situasi, lalu menanyakan hak istimewa VOC, strategi adu domba, contoh Devide et Impera, atau fungsi benteng dan ekspedisi. Keterampilan: membedakan hak, strategi, dan sarana. Kesalahan umum: menyebut Octrooi sebagai strategi, atau benteng sebagai hak.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 5 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">05</div>
+        <div class="materi-title">
+          <h3>Kebijakan Monopoli VOC</h3>
+          <p>Mengidentifikasi bentuk kebijakan monopoli dan tujuannya</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <ul>
+            <li><strong>Pelayaran Hongi (Hongitochten):</strong> patroli laut memakai perahu kora-kora bersenjata untuk mengawasi perkebunan rakyat di Maluku. Tujuan: menangkap dan menghukum penyelundup yang menjual rempah ke pedagang non-VOC.</li>
+            <li><strong>Hak Ekstirpasi:</strong> hak VOC menebang/memusnahkan pohon cengkih dan pala milik rakyat. Tujuan: menjaga produksi tidak berlebih, pasokan langka, harga tinggi.</li>
+            <li><strong>Verplichte Leverantie:</strong> penyerahan wajib hasil bumi; rakyat hanya boleh menjual hasil panen kepada VOC. Harga ditentukan sepihak dengan nilai sangat murah.</li>
+            <li><strong>Contingenten:</strong> pajak sepihak berupa hasil bumi yang wajib diserahkan langsung kepada VOC tanpa kompensasi.</li>
+            <li><strong>Preangerstelsel:</strong> tanam paksa kopi khusus di Priangan, Jawa Barat. Rakyat wajib menanam kopi dan menyetorkan seluruh hasil ke gudang VOC melalui bupati.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Semua kebijakan ini bertujuan menjaga <strong>monopoli dagang</strong> dan keuntungan VOC. Perlu dibedakan dengan jelas: <em>Hongi</em> = pengawasan dan penindakan penyelundupan; <em>Ekstirpasi</em> = pengendalian produksi dan harga; <em>Verplichte Leverantie</em> = kewajiban menjual hasil bumi; <em>Contingenten</em> = pajak hasil bumi; <em>Preangerstelsel</em> = tanam paksa kopi di Priangan.</p>
+          <p>Kesalahan umum: menukar Verplichte Leverantie dengan Contingenten.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal memberikan deskripsi kebijakan, lalu meminta nama kebijakan atau tujuannya. Keterampilan: mencocokkan mekanisme dengan nama kebijakan dan tujuan. Fokus belajar: hafalkan tabel secara fungsional, bukan hanya nama.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 6 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">06</div>
+        <div class="materi-title">
+          <h3>Dampak Monopoli dan Penaklukan Wilayah</h3>
+          <p>Menilai dampak dari berbagai sudut pandang</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p>Praktik monopoli VOC menimbulkan kemiskinan ekstrem, kelaparan, depopulasi massal akibat tindakan represif militer kolonial, dan matinya jaringan perdagangan maritim internasional yang sebelumnya hidup di kota pelabuhan Nusantara.</p>
+          <p><strong>Pembantaian Banda 1621:</strong></p>
+          <ul>
+            <li>Dipimpin Gubernur Jenderal VOC <strong>Jan Pieterszoon Coen</strong>.</li>
+            <li><strong>Penyebab:</strong> rakyat Banda menolak monopoli VOC karena harga terlalu murah; mereka diam-diam menjual pala kepada pedagang Inggris dan Asia lain, dianggap VOC sebagai penyelundup.</li>
+            <li><strong>Peristiwa:</strong> Coen membawa ribuan tentara bayaran, termasuk tentara Jepang/Samurai sebagai algojo; tetua adat dijebak dan dieksekusi; perkampungan dibakar; penduduk diburu.</li>
+            <li><strong>Dampak:</strong> lebih dari <strong>90% penduduk asli Banda tewas atau diperbudak</strong>; wilayah kosong diisi budak baru dan pekerja luar untuk perkebunan pala di bawah kendali VOC. Dicatat sebagai salah satu genosida pertama demi keuntungan korporasi.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Dampak monopoli tidak hanya ekonomi, tetapi juga <strong>demografis</strong> (penduduk berkurang drastis), <strong>sosial</strong> (perbudakan dan perubahan komposisi penduduk), <strong>politik</strong> (hilangnya kedaulatan lokal), dan <strong>ekonomi</strong> (perdagangan bebas mati, rakyat miskin).</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan dampak ekonomi/sosial/demografi, penyebab dan dampak Pembantaian Banda, atau menilai tindakan VOC dari sudut pandang kemanusiaan. Kesalahan umum: hanya menyebut "rakyat menderita" tanpa merinci bentuknya.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 7 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">07</div>
+        <div class="materi-title">
+          <h3>Kemunduran VOC dan Peralihan ke Hindia Belanda</h3>
+          <p>Menjelaskan faktor kemunduran dan perubahan pola kekuasaan</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p>VOC bangkrut dan dibubarkan <strong>31 Desember 1799</strong>. Faktor utama:</p>
+          <ul>
+            <li><strong>Korupsi massal:</strong> pejabat VOC memperkaya diri; VOC dipelesetkan menjadi <em>Vergaan Onder Corruptie</em> ("Runtuh karena Korupsi").</li>
+            <li><strong>Utang besar:</strong> biaya perang melawan perlawanan daerah sangat mahal.</li>
+            <li><strong>Persaingan dagang:</strong> ketat dengan Inggris (EIC) dan Prancis.</li>
+          </ul>
+          <p><strong>Peralihan:</strong> Mulai <strong>1 Januari 1800</strong>, seluruh wilayah, aset, dan utang-piutang VOC diambil alih Pemerintah Kerajaan Belanda (Republik Bataaf). Nusantara menjadi koloni resmi <strong>Hindia Belanda (Nederlandsch-Indie)</strong>. Masa transisi: Daendels (1808–1811), Inggris di bawah Raffles (1811–1816), lalu dikembalikan ke Belanda.</p>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Peralihan VOC ke pemerintah kolonial mengubah pola kekuasaan: dari kongsi dagang swasta yang memiliki hak istimewa, menjadi pemerintahan kolonial negara yang birokratis dan militeristik. Eksploitasi tidak lagi sepenuhnya melalui perusahaan dagang, tetapi melalui negara kolonial untuk mengisi kas negara Belanda.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan faktor kemunduran VOC, tanggal pembubaran, proses pengambilalihan, atau perbedaan VOC dan pemerintah kolonial. Kesalahan umum: menyebut VOC dibubarkan 1800, padahal 31 Desember 1799; pengambilalihan aset 1 Januari 1800.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 8 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">08</div>
+        <div class="materi-title">
+          <h3>Masa Daendels dan Raffles</h3>
+          <p>Menganalisis pengaruh politik Eropa dan kebijakan penguasa kolonial</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p><strong>Herman Willem Daendels (1808–1811):</strong> dikirim ke Jawa untuk mempertahankan pulau dari serangan Inggris.</p>
+          <ul>
+            <li><strong>Sentralisasi kekuasaan:</strong> menghapus otoritas tradisional raja-raja lokal; bupati menjadi pegawai negeri yang digaji dan tunduk pada pemerintah pusat di Batavia.</li>
+            <li><strong>Pembangunan Jalan Raya Pos (De Grote Postweg)</strong> dari Anyer hingga Panarukan sepanjang <strong>±1.000 km</strong> menggunakan kerja rodi; tujuan mempercepat mobilisasi militer dan pengiriman surat.</li>
+          </ul>
+          <p><strong>Thomas Stamford Raffles:</strong> Nusantara sempat dikuasai Inggris <strong>1811–1816</strong>; setelah itu dikembalikan ke Belanda.</p>
+        </div>
+        <div class="materi-section correction">
+          <h4>⚠️ Catatan Koreksi</h4>
+          <p>Rangkuman menyebut Jalan Raya Pos <strong>11.000 km</strong>. Angka yang benar adalah <strong>sekitar 1.000 km</strong>.</p>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Daendels memerintah bergaya militeristik karena ancaman Inggris dan pengaruh Prancis di Eropa. Raffles secara umum menerapkan sistem sewa tanah (<em>landrent</em>), mengurangi kekuasaan bupati, dan memperkenalkan administrasi modern — meski rangkuman tidak merinci kebijakan Raffles.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan tujuan Daendels datang, kebijakan sentralisasi, kerja rodi Jalan Raya Pos, atau periode Raffles. Keterampilan: menghubungkan politik Eropa (Perang Napoleon, ancaman Inggris) dengan kebijakan di Nusantara.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 9 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">09</div>
+        <div class="materi-title">
+          <h3>Sistem Tanam Paksa (Cultuurstelsel)</h3>
+          <p>Menganalisis latar belakang, pelaksanaan, dampak, dan penghapusan</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p>Setelah Inggris (1811–1816), Belanda kembali menguasai Nusantara. Menghadapi kebangkrutan akibat <strong>Perang Jawa (Diponegoro)</strong> dan <strong>Perang Belgia</strong>, Gubernur Jenderal <strong>Johannes van den Bosch</strong> menerapkan <strong>Cultuurstelsel (1830–1870)</strong>.</p>
+          <ul>
+            <li><strong>Mekanisme:</strong> rakyat wajib menanam komoditas ekspor (kopi, tebu, nila, teh) di <strong>sepertiga atau seperlima</strong> lahan mereka.</li>
+            <li><strong>Cultuurprocenten:</strong> pejabat kolonial dan bupati mendapat bonus berdasarkan jumlah hasil panen yang diserahkan; memicu pemerasan agar hasil melampaui target.</li>
+            <li><strong>Dampak:</strong> kas Belanda terisi penuh (<strong>Batig Slot</strong>); rakyat mengalami kelaparan, kemiskinan, dan penurunan jumlah penduduk drastis di Cirebon dan Demak.</li>
+            <li><strong>Penghapusan:</strong> kecaman kaum humanis dan liberal, salah satunya melalui <strong>Max Havelaar</strong> karya <strong>Multatuli</strong>; Tanam Paksa dihapus bertahap dan diganti ekonomi liberal.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Tujuan utama Tanam Paksa adalah mengisi kas negara Belanda yang kosong, bukan menyejahterakan rakyat. Cultuurprocenten menjadi salah satu penyebab penyimpangan. Penghapusan didorong oleh kritik kemanusiaan, kebebasan ekonomi liberal, dan kepentingan modal swasta.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan latar belakang, pelopor, mekanisme, dampak, atau penghapusan. Keterampilan: menganalisis kebijakan dari sebab sampai akibat. Kesalahan umum: menyebut Tanam Paksa hanya menguntungkan Belanda, padahal dampaknya juga penderitaan rakyat dan perubahan kebijakan.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">10</div>
+        <div class="materi-title">
+          <h3>Politik Pintu Terbuka dan Pax Nederlandica</h3>
+          <p>Membandingkan kebijakan liberal dengan masa sebelumnya</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p><strong>Politik Pintu Terbuka / Era Liberal (1870–1900):</strong></p>
+          <ul>
+            <li>Tanam Paksa dihapus bertahap, diganti ekonomi liberal.</li>
+            <li>Berlaku <strong>Undang-Undang Agraria (Agrarische Wet)</strong> dan <strong>Undang-Undang Gula (Suikerwet)</strong> tahun <strong>1870</strong>.</li>
+            <li>Investor swasta asing (Belanda, Inggris, Cina) boleh menyewa tanah untuk perkebunan besar.</li>
+            <li><strong>Eksploitasi gaya baru:</strong> rakyat menjadi buruh perkebunan berupah rendah dengan kondisi buruk, dilindungi aturan hukum ketat <strong>Poenale Sanctie</strong>.</li>
+          </ul>
+          <p><strong>Pax Nederlandica (awal abad ke-20):</strong></p>
+          <ul>
+            <li>Tujuan: memastikan seluruh Nusantara di bawah kendali tunggal Batavia.</li>
+            <li><strong>Ekspansi militer:</strong> Perang Aceh, Perang Jagaraga di Bali, Perang Banjar.</li>
+            <li><strong>Penyatuan wilayah:</strong> batas Hindia Belanda dari <strong>Sabang sampai Merauke</strong>, cikal bakal batas RI modern.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p>Politik Pintu Terbuka bukan berarti kebebasan bagi rakyat pribumi. Kebebasan itu terutama bagi <strong>modal swasta asing</strong>. Poenale Sanctie memberatkan buruh: pelanggaran kontrak kerja bisa dikenai hukuman berat. Pax Nederlandica adalah kebijakan ekspansi dan konsolidasi wilayah melalui kekuatan militer.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan isi UU Agraria/UU Gula, perbedaan Tanam Paksa dan era liberal, tujuan Poenale Sanctie, atau tujuan Pax Nederlandica. Kesalahan umum: menganggap era liberal lebih baik bagi rakyat; eksploitasi tetap berlangsung melalui buruh kontrak dan hukuman.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 11 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">11</div>
+        <div class="materi-title">
+          <h3>Politik Etis</h3>
+          <p>Menilai tujuan, pelaksanaan, dan dampak</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi <span style="font-size:.75rem;color:var(--primary-light);font-weight:600">(Tambahan — tidak ada di rangkuman)</span></h4>
+          <p>Politik Etis muncul sekitar awal abad ke-20, dipicu kritik terhadap eksploitasi kolonial. Istilah terkait: <strong>balas budi</strong>.</p>
+          <p><strong>Tujuan:</strong> meningkatkan kesejahteraan rakyat pribumi melalui <strong>Trias Politika</strong>:</p>
+          <ul>
+            <li><strong>Irigasi:</strong> membangun saluran air untuk pertanian.</li>
+            <li><strong>Edukasi:</strong> mendirikan sekolah.</li>
+            <li><strong>Emigrasi:</strong> memindahkan penduduk dari daerah padat ke daerah jarang.</li>
+          </ul>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p><strong>Pelaksanaan:</strong> irigasi dinikmati terutama perkebunan dan daerah tertentu; edukasi menghasilkan kaum terpelajar tetapi terbatas dan cenderung untuk elite; emigrasi tidak selalu berjalan sesuai harapan.</p>
+          <p><strong>Dampak:</strong> munculnya kaum terpelajar dan kesadaran nasional; perbaikan terbatas di bidang irigasi dan pendidikan; kesejahteraan rakyat secara umum belum meningkat signifikan.</p>
+          <p><strong>Kritik:</strong> Politik Etis lebih menguntungkan Belanda dan kelompok elite; pelaksanaannya banyak menyimpang; tetap berada dalam kerangka kolonialisme.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal menanyakan tujuan Politik Etis, isi Trias Politika, dampak positif (pendidikan, kaum terpelajar), atau kritik (penyimpangan, tidak merata). Keterampilan: menilai kesenjangan antara tujuan mulia dan praktik kolonial. Kesalahan umum: menganggap Politik Etis sepenuhnya tulus atau sama sekali tidak berdampak.</p>
+        </div>
+      </div></div>
+    </article>
+
+    <!-- 12 -->
+    <article class="materi-card">
+      <div class="materi-header" onclick="toggleMateri(this)">
+        <div class="materi-num">12</div>
+        <div class="materi-title">
+          <h3>Dampak Kolonialisme di Berbagai Bidang</h3>
+          <p>Menganalisis dampak politik, hukum, ekonomi, sosial, dan budaya</p>
+        </div>
+        <div class="materi-arrow">▾</div>
+      </div>
+      <div class="materi-body"><div class="materi-inner">
+        <div class="materi-section">
+          <h4>📖 Inti Materi</h4>
+          <p><strong>Politik:</strong> Daendels menghapus otoritas tradisional raja-raja lokal; bupati menjadi pegawai negeri yang tunduk pada pemerintah pusat; Pax Nederlandica menaklukkan wilayah merdeka dan menyatukan Hindia Belanda dari Sabang sampai Merauke.</p>
+          <p><strong>Ekonomi:</strong> monopoli VOC, ekstirpasi, verplichte leverantie, contingenten, preangerstelsel; Tanam Paksa dan cultuurprocenten; Politik Pintu Terbuka dengan perkebunan swasta dan buruh berupah rendah; rakyat miskin, kelaparan, depopulasi; perdagangan maritim internasional mati.</p>
+          <p><strong>Sosial:</strong> depopulasi massal, perbudakan, pekerja dari luar di Banda; rakyat menjadi buruh perkebunan dengan kondisi kerja buruk; penurunan jumlah penduduk di Cirebon dan Demak akibat Tanam Paksa.</p>
+        </div>
+        <div class="materi-section">
+          <h4>🔍 Pendalaman &amp; Tambahan</h4>
+          <p><strong>Hukum:</strong> pemerintah kolonial menerapkan politik hukum diskriminatif; penduduk dikelompokkan berdasarkan golongan (Eropa, Timur Asing, Pribumi); hukum tidak sama untuk semua; Poenale Sanctie memberatkan buruh; pengadilan kolonial dan hukum adat digunakan secara tidak setara.</p>
+          <p><strong>Budaya:</strong> masuknya pendidikan Barat dan bahasa Belanda; munculnya kaum terpelajar; masuknya agama Kristen di beberapa daerah; perubahan gaya hidup, arsitektur, dan administrasi; budaya lokal tidak hilang tetapi terjadi percampuran; pendidikan Barat menjadi salah satu saluran munculnya kesadaran nasional.</p>
+        </div>
+        <div class="materi-section indicator">
+          <h4>🎯 Keterangan Indikator Soal</h4>
+          <p>Soal meminta dampak di lima bidang: politik (hilangnya kedaulatan, sentralisasi), hukum (diskriminasi golongan, poenale sanctie), ekonomi (eksploitasi, monopoli, kerja paksa), sosial (stratifikasi, perbudakan, depopulasi), budaya (pendidikan Barat, kaum terpelajar, kesadaran nasional). Kesalahan umum: hanya menyebut dampak negatif ekonomi.</p>
+        </div>
+      </div></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== FLASHCARD ===== -->
+<section id="flashcard" style="background:linear-gradient(180deg,transparent,rgba(245,236,220,.5))">
+  <div class="section-head">
+    <span class="kicker">Bagian 02</span>
+    <h2>Flashcard Hafalan</h2>
+    <p>Klik kartu untuk membalik. Gunakan tombol navigasi atau acak untuk menguji ingatan.</p>
+  </div>
+  <div class="fc-wrap">
+    <div class="fc-toolbar">
+      <span class="fc-counter" id="fcCounter">Kartu 1 / 34</span>
+      <div class="fc-btns">
+        <button class="fc-btn" onclick="shuffleCards()">🔀 Acak</button>
+        <button class="fc-btn" onclick="prevCard()">← Sebelumnya</button>
+        <button class="fc-btn" onclick="nextCard()">Berikutnya →</button>
+      </div>
+    </div>
+    <div class="flashcard" id="flashcardEl" onclick="flipCard()">
+      <div class="flashcard-inner">
+        <div class="fc-face fc-front">
+          <div class="fc-label">Pertanyaan</div>
+          <p class="fc-text" id="fcQuestion">...</p>
+          <div class="fc-hint">Klik kartu untuk melihat jawaban</div>
+        </div>
+        <div class="fc-face fc-back">
+          <div class="fc-label">Jawaban</div>
+          <p class="fc-text" id="fcAnswer">...</p>
+          <div class="fc-hint">Klik untuk kembali</div>
+        </div>
+      </div>
+    </div>
+    <div class="fc-progress"><div class="fc-progress-fill" id="fcProgress" style="width:0%"></div></div>
+  </div>
+</section>
+
+<!-- ===== KUIS ===== -->
+<section id="kuis">
+  <div class="section-head">
+    <span class="kicker">Bagian 03</span>
+    <h2>Kuis Interaktif</h2>
+    <p>40 soal pilihan ganda. Setiap jawaban langsung diberi pembahasan. Uji kesiapanmu!</p>
+  </div>
+  <div class="quiz-wrap">
+    <div class="quiz-card" id="quizCard">
+      <div id="quizMain">
+        <div class="quiz-top">
+          <div class="quiz-progress"><div class="quiz-progress-fill" id="quizProgress" style="width:2.5%"></div></div>
+          <span class="quiz-counter" id="quizCounter">1 / 40</span>
+          <span class="quiz-score-mini" id="quizScoreMini">Skor: 0</span>
+        </div>
+        <div class="q-number" id="qNumber">Soal 1</div>
+        <p class="q-text" id="qText">...</p>
+        <div class="options" id="optionsContainer"></div>
+        <div class="feedback" id="feedback"></div>
+        <div class="quiz-actions">
+          <button class="btn-next" id="btnNext" onclick="nextQuestion()">Soal Berikutnya →</button>
+        </div>
+      </div>
+      <div class="result" id="quizResult">
+        <div class="result-emoji" id="resultEmoji">🎉</div>
+        <h3 id="resultTitle">Selesai!</h3>
+        <div class="result-score"><span id="resultScore">0</span><small> / 40</small></div>
+        <p class="result-msg" id="resultMsg"></p>
+        <button class="btn btn-primary" onclick="restartQuiz()">🔄 Ulangi Kuis</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Bahan Ajar SAS Sejarah Kelas XI</strong> — Kolonialisme &amp; Imperialisme di Nusantara</p>
+  <p style="margin-top:6px">Disusun berdasarkan Rangkuman Sejarah SMT 1 &amp; Kisi-kisi Soal Pilihan Ganda. Beberapa data telah dikoreksi. Gunakan sebagai bahan pendamping, bukan pengganti buku teks.</p>
+</footer>
+
+<script>
+/* ============ MATERI TOGGLE ============ */
+function toggleMateri(header){
+  const card = header.parentElement;
+  const body = card.querySelector('.materi-body');
+  const isOpen = card.classList.contains('open');
+  document.querySelectorAll('.materi-card.open').forEach(c=>{
+    c.classList.remove('open');
+    c.querySelector('.materi-body').style.maxHeight = null;
+  });
+  if(!isOpen){
+    card.classList.add('open');
+    body.style.maxHeight = body.scrollHeight + 40 + 'px';
+  }
+}
+
+/* ============ FLASHCARD ============ */
+const flashcards = [
+  {q:"Apa itu kolonialisme?", a:"Praktik penguasaan suatu wilayah oleh bangsa lain untuk memperoleh keuntungan, terutama melalui penguasaan sumber daya alam, tenaga kerja, dan perdagangan."},
+  {q:"Apa itu imperialisme?", a:"Kebijakan atau tindakan suatu negara untuk memperluas kekuasaan dan pengaruhnya atas bangsa atau wilayah lain, baik melalui politik, ekonomi, militer, maupun budaya."},
+  {q:"Apa perbedaan utama kolonialisme dan imperialisme?", a:"Kolonialisme berfokus pada penguasaan wilayah koloni; imperialisme lebih luas, mencakup perluasan kekuasaan dan pengaruh. Kolonialisme adalah salah satu bentuk imperialisme."},
+  {q:"Apa dampak jatuhnya Konstantinopel 1453?", a:"Jalur perdagangan rempah dari Asia ke Eropa terputus dan harga rempah melambung sangat tinggi."},
+  {q:"Apa isi semboyan 3G?", a:"Gold (kekayaan), Glory (kejayaan), Gospel (menyebarkan agama Nasrani)."},
+  {q:"Apa pengaruh Revolusi Industri terhadap kedatangan bangsa Barat?", a:"Eropa memerlukan lebih banyak bahan baku dan daerah pemasaran baru untuk produk industrinya."},
+  {q:"Siapa tokoh Portugis yang menguasai Malaka 1511?", a:"Alfonso d'Albuquerque. Portugis menguasai Malaka 1511 dan masuk Maluku 1512."},
+  {q:"Kapan Spanyol tiba di Tidore dan bagaimana penyelesaiannya?", a:"Spanyol tiba di Tidore, Maluku pada 1521. Persaingan dengan Portugis diselesaikan melalui Perjanjian Saragosa."},
+  {q:"Kapan Inggris dan Belanda pertama tiba di Nusantara?", a:"Francis Drake (Inggris) tiba di Ternate 1579; EIC didirikan 1600. Belanda mendarat di Banten 1596 di bawah Cornelis de Houtman."},
+  {q:"Kapan VOC didirikan?", a:"VOC didirikan pada 1602 untuk memonopoli perdagangan."},
+  {q:"Apa itu Hak Octrooi?", a:"Hak istimewa dari pemerintah Belanda kepada VOC: monopoli dagang, membentuk tentara, membangun benteng, menyatakan perang, dan mengadakan perjanjian."},
+  {q:"Apa itu Devide et Impera?", a:"Strategi VOC memecah belah kerajaan lokal dengan mengintervensi konflik internal atau menghasut perselisihan antarkerajaan, lalu berpihak pada kubu lemah."},
+  {q:"Contoh Devide et Impera VOC?", a:"Pemanfaatan konflik Sultan Hasanuddin dengan Arung Palakka dalam perlawanan Makassar."},
+  {q:"Apa itu Pelayaran Hongi?", a:"Patroli laut dengan perahu kora-kora bersenjata untuk mengawasi perkebunan rakyat di Maluku dan menangkap penyelundup yang menjual rempah ke pedagang non-VOC."},
+  {q:"Apa itu Hak Ekstirpasi?", a:"Hak VOC menebang/memusnahkan pohon cengkih dan pala milik rakyat agar produksi tidak berlebih, pasokan langka, dan harga tetap tinggi."},
+  {q:"Apa itu Verplichte Leverantie?", a:"Sistem penyerahan wajib hasil bumi; rakyat hanya boleh menjual hasil panen kepada VOC dengan harga yang ditentukan sepihak oleh VOC."},
+  {q:"Apa itu Contingenten?", a:"Pajak sepihak berupa hasil bumi yang wajib diserahkan langsung kepada VOC tanpa kompensasi."},
+  {q:"Apa itu Preangerstelsel?", a:"Aturan tanam paksa kopi di Priangan, Jawa Barat. Rakyat wajib menanam kopi dan menyetorkan seluruh hasil ke gudang VOC melalui bupati."},
+  {q:"Siapa pemimpin Pembantaian Banda 1621?", a:"Jan Pieterszoon Coen, Gubernur Jenderal VOC. Lebih dari 90% penduduk asli Banda tewas atau diperbudak."},
+  {q:"Apa penyebab Pembantaian Banda 1621?", a:"Rakyat Banda menolak monopoli VOC karena harga terlalu murah dan tetap menjual pala kepada pedagang Inggris/Asia lain yang dianggap VOC sebagai penyelundup."},
+  {q:"Kapan VOC dibubarkan?", a:"VOC bangkrut dan dibubarkan 31 Desember 1799. Faktor: korupsi massal, utang besar, persaingan dagang."},
+  {q:"Apa yang terjadi 1 Januari 1800?", a:"Seluruh wilayah, aset, dan utang-piutang VOC diambil alih Pemerintah Kerajaan Belanda. Nusantara menjadi Hindia Belanda (Nederlandsch-Indie)."},
+  {q:"Siapa Herman Willem Daendels dan kapan memerintah?", a:"Gubernur Jenderal Belanda 1808–1811. Dikenal dengan sentralisasi kekuasaan dan pembangunan Jalan Raya Pos."},
+  {q:"Berapa panjang Jalan Raya Pos?", a:"Sekitar 1.000 km, dari Anyer hingga Panarukan. Dibangun dengan kerja rodi untuk mobilisasi militer dan pengiriman surat."},
+  {q:"Kapan Raffles menguasai Nusantara?", a:"Inggris di bawah Thomas Stamford Raffles menguasai Nusantara pada 1811–1816, sebelum dikembalikan ke Belanda."},
+  {q:"Siapa pelopor Sistem Tanam Paksa dan kapan berlangsung?", a:"Johannes van den Bosch, Gubernur Jenderal. Cultuurstelsel berlangsung 1830–1870."},
+  {q:"Apa mekanisme Tanam Paksa?", a:"Rakyat wajib menanam komoditas ekspor (kopi, tebu, nila, teh) di sepertiga atau seperlima lahan mereka."},
+  {q:"Apa itu Cultuurprocenten?", a:"Bonus finansial bagi pejabat kolonial dan bupati berdasarkan jumlah hasil panen yang diserahkan; memicu pemerasan agar hasil melampaui target."},
+  {q:"Apa itu Batig Slot?", a:"Surplus/kas negara Belanda yang terisi penuh akibat Sistem Tanam Paksa."},
+  {q:"Buku apa yang mengkritik Tanam Paksa dan siapa penulisnya?", a:"Max Havelaar karya Multatuli (Eduard Douwes Dekker). Kritik ini mendorong penghapusan Tanam Paksa secara bertahap."},
+  {q:"Apa isi UU Agraria dan UU Gula 1870?", a:"Mengizinkan investor swasta asing (Belanda, Inggris, Cina) menyewa tanah di Nusantara untuk membuka perkebunan besar."},
+  {q:"Apa itu Poenale Sanctie?", a:"Aturan hukum ketat pada era liberal yang memberatkan buruh perkebunan; pelanggaran kontrak kerja bisa dikenai hukuman berat."},
+  {q:"Apa tujuan Pax Nederlandica?", a:"Menyatukan seluruh Nusantara di bawah kendali tunggal Batavia melalui ekspansi militer (Perang Aceh, Jagaraga, Banjar), membentuk batas Sabang–Merauke."},
+  {q:"Apa itu Politik Etis dan Trias Politika?", a:"Politik balas budi awal abad ke-20 dengan program Trias Politika: irigasi, edukasi, dan emigrasi untuk meningkatkan kesejahteraan rakyat pribumi."}
+];
+
+let fcIndex = 0;
+let fcDeck = [...flashcards];
+
+function renderCard(){
+  const c = fcDeck[fcIndex];
+  document.getElementById('fcQuestion').textContent = c.q;
+  document.getElementById('fcAnswer').textContent = c.a;
+  document.getElementById('fcCounter').textContent = `Kartu ${fcIndex+1} / ${fcDeck.length}`;
+  document.getElementById('fcProgress').style.width = ((fcIndex+1)/fcDeck.length*100)+'%';
+  document.getElementById('flashcardEl').classList.remove('flipped');
+}
+function flipCard(){ document.getElementById('flashcardEl').classList.toggle('flipped'); }
+function nextCard(){ fcIndex = (fcIndex+1) % fcDeck.length; renderCard(); }
+function prevCard(){ fcIndex = (fcIndex-1+fcDeck.length) % fcDeck.length; renderCard(); }
+function shuffleCards(){
+  for(let i=fcDeck.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [fcDeck[i],fcDeck[j]] = [fcDeck[j],fcDeck[i]];
+  }
+  fcIndex = 0; renderCard();
+}
+renderCard();
+
+/* ============ QUIZ ============ */
+const quizData = [
+  {q:"Kolonialisme dan imperialisme memiliki hubungan erat. Pernyataan yang paling tepat adalah...",
+   options:["Kolonialisme adalah konsep yang lebih luas daripada imperialisme","Imperialisme selalu berbentuk pendudukan wilayah secara langsung","Kolonialisme merupakan salah satu bentuk praktik imperialisme","Imperialisme hanya dilakukan melalui tekanan budaya","Kolonialisme tidak bertujuan memperoleh keuntungan ekonomi"],
+   answer:2, explanation:"Menurut rangkuman, kolonialisme adalah salah satu bentuk praktik imperialisme, sedangkan imperialisme merupakan konsep yang lebih luas."},
+  {q:"Perbedaan utama antara kolonialisme dan imperialisme terletak pada...",
+   options:["Kolonialisme berfokus pada perluasan pengaruh, imperialisme pada pendudukan wilayah","Kolonialisme berfokus pada penguasaan wilayah koloni, imperialisme pada perluasan kekuasaan dan pengaruh","Keduanya sama-sama hanya menggunakan kekuatan militer","Imperialisme hanya terjadi di Asia, kolonialisme di Afrika","Kolonialisme tidak berkaitan dengan ekonomi"],
+   answer:1, explanation:"Kolonialisme fokus pada penguasaan wilayah koloni; imperialisme lebih luas, mencakup perluasan kekuasaan dan pengaruh."},
+  {q:"Jatuhnya Konstantinopel ke tangan Turki Usmani pada 1453 berdampak bagi bangsa Eropa, yaitu...",
+   options:["Bangsa Eropa memperoleh jalur perdagangan baru ke Asia","Jalur perdagangan rempah-rempah terputus dan harga melambung","Bangsa Eropa berhenti mencari rempah-rempah","Turki Usmani membuka pelabuhan untuk Eropa","Rempah-rempah menjadi barang gratis"],
+   answer:1, explanation:"Jatuhnya Konstantinopel memutus jalur perdagangan rempah dari Asia ke Eropa sehingga harga rempah melambung tinggi."},
+  {q:"Semboyan 3G dalam ekspansi bangsa Eropa mencakup...",
+   options:["Gold, Glory, Gospel","Gold, Growth, Government","Glory, Gospel, Geography","Government, Gold, God","Gospel, Geography, Gold"],
+   answer:0, explanation:"3G adalah Gold (kekayaan), Glory (kejayaan), dan Gospel (menyebarkan agama Nasrani)."},
+  {q:"Pengaruh Revolusi Industri terhadap kedatangan bangsa Barat ke Nusantara adalah...",
+   options:["Eropa membutuhkan bahan baku dan daerah pemasaran baru","Eropa mengurangi produksi industri","Eropa menutup perusahaan dagang","Eropa melarang pelayaran jarak jauh","Eropa menghentikan ekspansi wilayah"],
+   answer:0, explanation:"Revolusi Industri membuat bangsa Barat memerlukan lebih banyak bahan baku serta daerah pemasaran baru untuk produk-produk mereka."},
+  {q:"Tokoh Portugis yang berhasil menguasai Malaka pada 1511 adalah...",
+   options:["Cornelis de Houtman","Alfonso d'Albuquerque","Jan Pieterszoon Coen","Thomas Stamford Raffles","Herman Willem Daendels"],
+   answer:1, explanation:"Alfonso d'Albuquerque memimpin Portugis menguasai Malaka pada 1511 dan masuk Maluku pada 1512."},
+  {q:"Spanyol tiba di Tidore, Maluku pada 1521. Persaingan dengan Portugis diselesaikan melalui...",
+   options:["Perjanjian Bongaya","Perjanjian Saragosa","Perjanjian Giyanti","Perjanjian Linggarjati","Perjanjian Renville"],
+   answer:1, explanation:"Perjanjian Saragosa menjadi penyelesaian persaingan Portugis dan Spanyol setelah Spanyol tiba di Tidore."},
+  {q:"Urutan kronologis kedatangan bangsa Barat ke Nusantara berdasarkan kedatangan pertama yang benar adalah...",
+   options:["Portugis (1511/1512) → Spanyol (1521) → Inggris (1579) → Belanda (1596)","Belanda → Portugis → Inggris → Spanyol","Inggris → Belanda → Spanyol → Portugis","Spanyol → Portugis → Inggris → Belanda","Portugis → Belanda → Spanyol → Inggris"],
+   answer:0, explanation:"Berdasarkan kedatangan pertama: Portugis 1511/1512, Spanyol 1521, Francis Drake (Inggris) 1579, lalu Belanda 1596."},
+  {q:"Hak istimewa VOC dari pemerintah Belanda yang memungkinkan memonopoli perdagangan disebut...",
+   options:["Hak Octrooi","Hak Ekstirpasi","Hak Angket","Hak Imunitas","Hak Prerogatif"],
+   answer:0, explanation:"Hak Octrooi adalah hak istimewa VOC yang mencakup monopoli dagang, membentuk tentara, membangun benteng, menyatakan perang, dan mengadakan perjanjian."},
+  {q:"Strategi VOC memecah belah kerajaan lokal disebut...",
+   options:["Pax Neerlandica","Devide et Impera","Cultuurstelsel","Hongitochten","Poenale Sanctie"],
+   answer:1, explanation:"Devide et Impera adalah politik adu domba VOC terhadap kerajaan-kerajaan lokal."},
+  {q:"Salah satu contoh politik adu domba VOC adalah memanfaatkan konflik antara...",
+   options:["Sultan Agung dan Belanda","Sultan Hasanuddin dengan Arung Palakka","Diponegoro dengan Belanda","Pattimura dengan Inggris","Tuanku Imam Bonjol dengan Portugis"],
+   answer:1, explanation:"VOC memanfaatkan konflik Sultan Hasanuddin dengan Arung Palakka dalam perlawanan Makassar."},
+  {q:"Pelayaran Hongi bertujuan...",
+   options:["Mengawasi perkebunan rakyat dan menangkap penyelundup rempah","Membangun jalan raya pos","Menanam kopi di Priangan","Menarik pajak hasil bumi","Membuka sekolah untuk pribumi"],
+   answer:0, explanation:"Pelayaran Hongi adalah patroli laut bersenjata untuk mengawasi perkebunan rakyat di Maluku dan menangkap penyelundup rempah."},
+  {q:"Hak VOC untuk menebang pohon cengkih dan pala milik rakyat agar harga tetap tinggi disebut...",
+   options:["Verplichte Leverantie","Contingenten","Hak Ekstirpasi","Preangerstelsel","Cultuurprocenten"],
+   answer:2, explanation:"Hak Ekstirpasi adalah hak VOC untuk menebang/memusnahkan pohon cengkih dan pala agar produksi tidak berlebih dan harga tetap tinggi."},
+  {q:"Sistem penyerahan wajib hasil bumi kepada VOC dengan harga ditentukan sepihak disebut...",
+   options:["Contingenten","Verplichte Leverantie","Preangerstelsel","Hongitochten","Ekstirpasi"],
+   answer:1, explanation:"Verplichte Leverantie adalah penyerahan wajib hasil bumi; rakyat hanya boleh menjual hasil panen kepada VOC dengan harga sepihak."},
+  {q:"Pembantaian Banda 1621 dipimpin oleh...",
+   options:["Cornelis de Houtman","Jan Pieterszoon Coen","Alfonso d'Albuquerque","Van den Bosch","Daendels"],
+   answer:1, explanation:"Pembantaian Banda 1621 dipimpin Gubernur Jenderal VOC Jan Pieterszoon Coen."},
+  {q:"Penyebab utama Pembantaian Banda 1621 adalah...",
+   options:["Rakyat Banda menolak monopoli VOC dan menjual pala kepada pedagang lain","Rakyat Banda menyerang kapal Inggris","VOC ingin membangun jalan raya","Rakyat Banda meminta perlindungan Portugis","VOC ingin menyebarkan agama Kristen"],
+   answer:0, explanation:"Rakyat Banda menolak monopoli VOC karena harga terlalu murah dan diam-diam menjual pala kepada pedagang Inggris/Asia lain."},
+  {q:"Dampak Pembantaian Banda 1621 bagi penduduk asli adalah...",
+   options:["Penduduk Banda semakin sejahtera","Lebih dari 90% penduduk tewas atau diperbudak","Penduduk Banda memperoleh hak monopoli","VOC gagal menguasai Banda","Banda menjadi pusat perdagangan bebas"],
+   answer:1, explanation:"Lebih dari 90% penduduk asli Banda tewas atau diperbudak; wilayah kosong diisi budak dan pekerja luar untuk perkebunan pala VOC."},
+  {q:"Dampak praktik monopoli VOC bagi rakyat pribumi adalah...",
+   options:["Kemiskinan, kelaparan, dan depopulasi","Kesejahteraan merata","Kebebasan berdagang","Harga rempah-rempah naik bagi rakyat","Rakyat menjadi pemilik VOC"],
+   answer:0, explanation:"Monopoli VOC menimbulkan kemiskinan ekstrem, kelaparan, depopulasi massal, dan matinya jaringan perdagangan maritim Nusantara."},
+  {q:"Faktor utama kemunduran VOC adalah...",
+   options:["Korupsi massal, utang besar, dan persaingan dagang","Kemenangan VOC atas Inggris","Berkurangnya rempah-rempah di Eropa","Dukungan rakyat Nusantara","Pembubaran oleh raja-raja lokal"],
+   answer:0, explanation:"Faktor kemunduran VOC: korupsi massal, utang besar akibat perang, dan persaingan dagang dengan EIC dan Prancis."},
+  {q:"VOC resmi dibubarkan pada tanggal...",
+   options:["31 Desember 1799","1 Januari 1800","17 Agustus 1945","28 Oktober 1928","1 Juni 1945"],
+   answer:0, explanation:"VOC bangkrut dan dibubarkan 31 Desember 1799; asetnya diambil alih pemerintah Belanda 1 Januari 1800."},
+  {q:"Gubernur Jenderal Daendels membangun Jalan Raya Pos dari Anyer hingga Panarukan menggunakan...",
+   options:["Tenaga kerja sukarela","Kerja rodi","Tentara bayaran Inggris","Buruh kontrak dari Cina","Mesin industri modern"],
+   answer:1, explanation:"Jalan Raya Pos sepanjang ±1.000 km dibangun dengan kerja rodi untuk mobilisasi militer dan pengiriman surat."},
+  {q:"Kebijakan Daendels yang mengubah status bupati menjadi pegawai negeri bertujuan...",
+   options:["Memperkuat otonomi daerah","Sentralisasi kekuasaan pemerintah kolonial","Mengurangi kekuasaan gubernur jenderal","Memberi kebebasan rakyat","Menghapus feodalisme sepenuhnya"],
+   answer:1, explanation:"Daendels melakukan sentralisasi kekuasaan: menghapus otoritas tradisional raja lokal dan menjadikan bupati pegawai negeri yang tunduk pada Batavia."},
+  {q:"Thomas Stamford Raffles pernah menguasai Nusantara pada periode...",
+   options:["1808–1811","1811–1816","1816–1830","1830–1870","1870–1900"],
+   answer:1, explanation:"Inggris di bawah Raffles menguasai Nusantara pada 1811–1816, sebelum dikembalikan ke Belanda."},
+  {q:"Sistem Tanam Paksa (Cultuurstelsel) dipelopori oleh...",
+   options:["Johannes van den Bosch","Herman Willem Daendels","Thomas Stamford Raffles","Jan Pieterszoon Coen","Multatuli"],
+   answer:0, explanation:"Cultuurstelsel (1830–1870) dipelopori Gubernur Jenderal Johannes van den Bosch."},
+  {q:"Mekanisme Tanam Paksa mewajibkan rakyat menanam komoditas ekspor di...",
+   options:["Seluruh lahan miliknya","Sepertiga atau seperlima lahan mereka","Lahan milik bangsawan","Lahan kosong tanpa pemilik","Perkebunan swasta asing"],
+   answer:1, explanation:"Rakyat wajib menanam komoditas ekspor di sepertiga atau seperlima lahan mereka."},
+  {q:"Sistem Cultuurprocenten dalam Tanam Paksa memberikan bonus kepada pejabat berdasarkan...",
+   options:["Jumlah penduduk yang sehat","Jumlah hasil panen yang diserahkan","Luas wilayah kekuasaan","Banyaknya sekolah yang dibangun","Jumlah jalan yang dibangun"],
+   answer:1, explanation:"Cultuurprocenten memberi bonus berdasarkan jumlah hasil panen yang diserahkan, memicu pemerasan agar hasil melampaui target."},
+  {q:"Alasan Sistem Tanam Paksa dihapus secara bertahap adalah...",
+   options:["Kecaman kaum humanis dan liberal, antara lain melalui buku Max Havelaar","Rakyat menyukai Tanam Paksa","Belanda mengalami kelebihan hasil panen","Inggris memaksa Belanda menghapusnya","VOC bangkrut"],
+   answer:0, explanation:"Tanam Paksa dihapus akibat kecaman kaum humanis dan liberal Belanda, salah satunya melalui Max Havelaar karya Multatuli."},
+  {q:"Undang-Undang Agraria dan Undang-Undang Gula tahun 1870 membuka jalan bagi...",
+   options:["Monopoli VOC","Investasi swasta asing di Nusantara","Penghapusan kerja rodi","Kembalinya sistem tanam paksa","Larangan perkebunan swasta"],
+   answer:1, explanation:"UU Agraria dan UU Gula 1870 mengizinkan investor swasta asing menyewa tanah di Nusantara untuk perkebunan besar."},
+  {q:"Poenale Sanctie pada masa liberal adalah...",
+   options:["Aturan yang melindungi buruh perkebunan","Hukuman berat bagi buruh yang melanggar kontrak kerja","Pajak hasil bumi","Hak monopoli pedagang pribumi","Sistem tanam paksa kopi"],
+   answer:1, explanation:"Poenale Sanctie adalah aturan hukum ketat yang memberatkan buruh; pelanggaran kontrak kerja bisa dikenai hukuman berat."},
+  {q:"Kebijakan Pax Nederlandica bertujuan...",
+   options:["Menyatukan seluruh wilayah Nusantara di bawah kendali Batavia","Memberi kemerdekaan kepada daerah","Mengakhiri kolonialisme Belanda","Membangun sekolah untuk pribumi","Menghapus monopoli dagang"],
+   answer:0, explanation:"Pax Nederlandica bertujuan menyatukan seluruh Nusantara di bawah kendali Batavia melalui ekspansi militer (Perang Aceh, Jagaraga, Banjar)."},
+  {q:"Politik Etis yang diterapkan pemerintah kolonial Belanda pada awal abad ke-20 bertujuan...",
+   options:["Membalas jasa rakyat pribumi","Meningkatkan kesejahteraan rakyat sebagai balas budi","Memperkuat monopoli VOC","Menghapus sistem birokrasi","Menghentikan ekspansi militer"],
+   answer:1, explanation:"Politik Etis bertujuan meningkatkan kesejahteraan rakyat pribumi sebagai 'balas budi' atas eksploitasi kolonial."},
+  {q:"Salah satu program Trias Politika dalam Politik Etis adalah...",
+   options:["Irigasi, edukasi, dan emigrasi","Gold, glory, gospel","Hongi, ekstirpasi, contingenten","Devide et impera","Kerja rodi, tanam paksa, poenale sanctie"],
+   answer:0, explanation:"Trias Politika Politik Etis: irigasi (saluran air), edukasi (pendidikan), dan emigrasi (perpindahan penduduk)."},
+  {q:"Dampak positif Politik Etis bagi rakyat pribumi adalah...",
+   options:["Munculnya kaum terpelajar dan sekolah-sekolah","Hilangnya seluruh pajak","Rakyat memperoleh kemerdekaan langsung","Berakhirnya kolonialisme","Rakyat menjadi pemilik perkebunan"],
+   answer:0, explanation:"Politik Etis melalui edukasi menghasilkan kaum terpelajar yang kemudian menjadi motor kesadaran nasional."},
+  {q:"Kritik terhadap Politik Etis adalah...",
+   options:["Pelaksanaannya banyak menyimpang dan tetap menguntungkan Belanda","Terlalu cepat memberi kemerdekaan","Tidak ada sekolah yang dibangun","Rakyat menolak irigasi","Belanda rugi besar"],
+   answer:0, explanation:"Politik Etis dikritik karena pelaksanaannya menyimpang, tidak merata, dan tetap menguntungkan Belanda serta kelompok elite."},
+  {q:"Dampak kolonialisme di bidang politik adalah...",
+   options:["Hilangnya kedaulatan kerajaan-kerajaan lokal","Semakin kuatnya kerajaan tradisional","Rakyat memperoleh hak politik penuh","Berakhirnya feodalisme secara sukarela","Terbentuknya republik sejak abad ke-17"],
+   answer:0, explanation:"Kolonialisme menghilangkan kedaulatan kerajaan lokal; bupati dijadikan pegawai negeri dan wilayah disatukan di bawah Batavia."},
+  {q:"Di bidang hukum, kolonialisme Belanda menerapkan...",
+   options:["Hukum yang sama untuk semua golongan","Hukum yang membedakan golongan penduduk","Penghapusan pengadilan","Hukum adat sebagai satu-satunya hukum","Hukum internasional secara penuh"],
+   answer:1, explanation:"Pemerintah kolonial menerapkan politik hukum diskriminatif: penduduk dikelompokkan (Eropa, Timur Asing, Pribumi) dengan hukum yang berbeda."},
+  {q:"Dampak kolonialisme di bidang ekonomi bagi rakyat pribumi adalah...",
+   options:["Eksploitasi sumber daya dan kerja paksa","Pemerataan kesejahteraan","Berdirinya bank milik rakyat","Hilangnya sistem perdagangan","Rakyat menjadi pemodal utama"],
+   answer:0, explanation:"Kolonialisme mengeksploitasi sumber daya dan tenaga kerja rakyat melalui monopoli, tanam paksa, kerja rodi, dan buruh murah."},
+  {q:"Di bidang sosial, kolonialisme menimbulkan...",
+   options:["Stratifikasi sosial berdasarkan ras dan golongan","Penghapusan kelas sosial","Kesetaraan penuh antarwarga","Hilangnya budaya lokal","Larangan pendidikan bagi semua"],
+   answer:0, explanation:"Kolonialisme menciptakan stratifikasi sosial berdasarkan ras dan golongan: Eropa, Timur Asing, dan Pribumi."},
+  {q:"Dampak kolonialisme di bidang budaya adalah...",
+   options:["Masuknya pengaruh budaya Barat dan munculnya budaya campuran","Hilangnya seluruh budaya lokal","Tidak ada perubahan budaya","Budaya lokal menggantikan budaya Barat","Rakyat menolak semua budaya asing"],
+   answer:0, explanation:"Kolonialisme membawa pendidikan Barat, bahasa Belanda, agama Kristen di beberapa daerah, dan perubahan gaya hidup, tanpa menghilangkan budaya lokal."},
+  {q:"Kesimpulan yang tepat tentang dampak kolonialisme bagi Indonesia adalah...",
+   options:["Hanya membawa kemajuan tanpa penderitaan","Menimbulkan penderitaan rakyat, tetapi juga memunculkan kesadaran nasional","Tidak berpengaruh terhadap kehidupan masyarakat","Seluruh rakyat hidup sejahtera","Tidak ada perubahan politik sama sekali"],
+   answer:1, explanation:"Kolonialisme menimbulkan penderitaan (eksploitasi, kemiskinan, depopulasi), tetapi juga melahirkan kaum terpelajar dan kesadaran nasional yang mengarah pada pergerakan kemerdekaan."}
+];
+
+let qIndex = 0;
+let score = 0;
+let answered = false;
+
+function renderQuestion(){
+  answered = false;
+  const q = quizData[qIndex];
+  document.getElementById('qNumber').textContent = `Soal ${qIndex+1}`;
+  document.getElementById('qText').textContent = q.q;
+  document.getElementById('quizCounter').textContent = `${qIndex+1} / ${quizData.length}`;
+  document.getElementById('quizProgress').style.width = ((qIndex+1)/quizData.length*100)+'%';
+  document.getElementById('quizScoreMini').textContent = `Skor: ${score}`;
+  document.getElementById('feedback').className = 'feedback';
+  document.getElementById('feedback').innerHTML = '';
+  document.getElementById('btnNext').classList.remove('show');
+  const letters = ['A','B','C','D','E'];
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+  q.options.forEach((opt,i)=>{
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.innerHTML = `<span class="option-letter">${letters[i]}</span><span>${opt}</span>`;
+    btn.onclick = ()=>selectOption(i,btn);
+    container.appendChild(btn);
+  });
+}
+
+function selectOption(i, btn){
+  if(answered) return;
+  answered = true;
+  const q = quizData[qIndex];
+  const allOptions = document.querySelectorAll('.option');
+  allOptions.forEach((o,idx)=>{
+    o.classList.add('disabled');
+    if(idx === q.answer) o.classList.add('correct');
+  });
+  const fb = document.getElementById('feedback');
+  if(i === q.answer){
+    score++;
+    fb.className = 'feedback correct show';
+    fb.innerHTML = `<h5>✓ Jawaban Benar</h5><p>${q.explanation}</p>`;
+  } else {
+    btn.classList.add('wrong');
+    fb.className = 'feedback wrong show';
+    fb.innerHTML = `<h5>✗ Jawaban Kurang Tepat</h5><p><strong>Jawaban benar: ${['A','B','C','D','E'][q.answer]}</strong></p><p>${q.explanation}</p>`;
+  }
+  document.getElementById('quizScoreMini').textContent = `Skor: ${score}`;
+  const nextBtn = document.getElementById('btnNext');
+  nextBtn.classList.add('show');
+  nextBtn.textContent = qIndex === quizData.length-1 ? 'Lihat Hasil →' : 'Soal Berikutnya →';
+}
+
+function nextQuestion(){
+  if(qIndex < quizData.length-1){
+    qIndex++;
+    renderQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function showResult(){
+  document.getElementById('quizMain').style.display = 'none';
+  const result = document.getElementById('quizResult');
+  result.classList.add('show');
+  document.getElementById('resultScore').textContent = score;
+  const pct = score/quizData.length*100;
+  let emoji='🎉', title='Luar Biasa!', msg='';
+  if(pct >= 90){ emoji='🏆'; title='Sempurna!'; msg='Kamu sangat siap menghadapi SAS Sejarah. Pertahankan!'; }
+  else if(pct >= 75){ emoji='🎉'; title='Hebat!'; msg='Pemahamanmu sudah kuat. Tinjau kembali beberapa materi yang masih salah.'; }
+  else if(pct >= 60){ emoji='👍'; title='Cukup Baik'; msg='Sudah di jalur yang benar. Baca ulang materi dan flashcard untuk memperkuat ingatan.'; }
+  else if(pct >= 40){ emoji='📚'; title='Perlu Belajar Lagi'; msg='Baca ulang materi pokok dan flashcard, lalu ulangi kuis ini.'; }
+  else { emoji='💪'; title='Ayo Semangat!'; msg='Jangan menyerah. Pelajari materi dari awal, gunakan flashcard, lalu coba lagi.'; }
+  document.getElementById('resultEmoji').textContent = emoji;
+  document.getElementById('resultTitle').textContent = title;
+  document.getElementById('resultMsg').textContent = msg;
+}
+
+function restartQuiz(){
+  qIndex = 0; score = 0; answered = false;
+  document.getElementById('quizMain').style.display = 'block';
+  document.getElementById('quizResult').classList.remove('show');
+  renderQuestion();
+}
+
+renderQuestion();
+</script>
+</body>
+</html>
